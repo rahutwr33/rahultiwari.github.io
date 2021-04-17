@@ -18,6 +18,8 @@ var theForm = document.getElementById( 'theForm' );
                 contentType: 'application/json',
                 data: data,
                 dataType: 'jsonp',
+                async: true,
+                crossDomain:true,
                 statusCode: {
                     0: function (){
                         //console.log("response 0");
