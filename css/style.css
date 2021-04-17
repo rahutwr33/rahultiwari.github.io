@@ -8,8 +8,15 @@ a {
 a:hover {
   color:#2ecff9;
 }
+img {
+  aspect-ratio: attr(width) / attr(height);
+}
 .header {
   padding-top:2em;
+}
+img {
+  height: auto;
+  width: 100%;
 }
 h1 {
   font-family:'ProximaNova';
