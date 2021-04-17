@@ -20,6 +20,11 @@ var theForm = document.getElementById( 'theForm' );
                 dataType: 'jsonp',
                 async: true,
                 crossDomain:true,
+                "headers": {
+                  "accept": "application/json",
+                  "Access-Control-Allow-Origin":"*"
+                },
+                'cache': false,
                 statusCode: {
                     0: function (){
                         //console.log("response 0");
