@@ -5,18 +5,19 @@ var theForm = document.getElementById( 'theForm' );
 
       new stepsForm( theForm, {
         onSubmit : function( form ) {
-          // hide form
           classie.addClass( theForm.querySelector( '.simform-inner' ), 'hide' );
+          var data = {
+            "entry.256491656" : $("#q2").val(), 
+            "entry.187641189" : $("#q3").val(), 
+            "entry.697642921" : $("#q1").val()
+          }
           //console.log("Submitted Request");
-
-          var link="https://docs.google.com/forms/d/e/1FAIpQLSflN5eLF0j3bs-nbQfynOAls411_G7EJ1MGGi1IAAD6iPVGag/formResponse";
-          console.log($("#q2").val())
           jQuery.ajax({
-                url: link,
-                data: {"entry.2111170142" : $("#q2").val() , "entry.2040235095" : $("#q3").val() , "entry.72030663" : $("#q1").val() },
                 type: "POST",
-                dataType: "xml",
-                crossDomain:true,
+                url: 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSeyed4TJdIZ4apKl6-tQzSB6grinpiNfb45H2e5GMQVKPgmwA/formResponse',
+                contentType: 'application/json',
+                data: data,
+                dataType: 'jsonp',
                 statusCode: {
                     0: function (){
                         //console.log("response 0");
