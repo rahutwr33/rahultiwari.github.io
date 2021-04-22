@@ -64,7 +64,7 @@ $(document).ready(function() {
         $(".downloadCV").html("<p>Download my Resume</p><img src='img/dwnld.gif'>");
         $(".resume").addClass("downloaded");
         setTimeout(function(){
-          window.open("https://docs.google.com/document/d/1MJJVd1qdPVpOD4qbbYhzlab1EU_PtMVRd-4KYY6doTc","_blank");
+          window.open("rahul_tiwari.pdf","_blank");
           $(".downloaded").removeClass("resume");
         },5000)
        }
