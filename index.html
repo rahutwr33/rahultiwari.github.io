@@ -6,33 +6,34 @@
   <meta name="description"
     content="I am Rahul Tiwari, I'm a Javascript Web developer, Bike rider, and a wayfarer.">
   <meta name="keywords"
-    content="Rahul Tiwari,rahul tiwari uttrakhand,rahul tiwari nainital,rahul tiwari javascipt developer,rahul tiwari Bikerider, rahul tiwari traveler,rahul tiwari software developer,rahul tiwari chandigarh, rahul tiwari india, rahul tiwari wayfarer,rahult,rahul tiwari kumauni">
+    content="Rahul,Rahul Tiwari,rahul tiwari uttrakhand,senior software engineer,rahul tiwari nainital,rahul tiwari javascipt developer,rahul tiwari Bikerider, rahul tiwari traveler,rahul tiwari software developer,rahul tiwari chandigarh, rahul tiwari india, rahul tiwari wayfarer,rahult,rahul tiwari kumauni">
   <meta name="author" content="Rahul Tiwari">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta property="og:title" content="Rahul Tiwari" />
   <meta property="og:url" content="index.html" />
   <meta property="og:image" content="img/logo.png" />
   <meta property="og:site_name" content="Rahul Tiwari" />
+  <meta name="theme-color" content="#009ca8">
   <meta property="og:description"
     content="Hi I am Rahul Tiwari,a 28 year old Web developer living in chandigarh,india. I'm a Javascript Web developer,rider,wayfarer. If you want your own website or grow your business online then coffee with me." />
   <title>Rahul Tiwari</title>
   
   <!-- Google / Search Engine Tags -->
   <meta itemprop="name" content="Rahul Tiwari">
-  <meta itemprop="description" content="Hello World I am Rahul Tiwari, I'm a Javascript Web developer, Bike rider, and a wayfarer.">
+  <meta itemprop="description" content="I am Rahul Tiwari, I'm a Javascript Web developer, Bike rider, and a wayfarer, senior software engineer">
   <meta itemprop="image" content="https://rahultiwari.info/img/rahulnew.webp">
   
   <!-- Facebook Meta Tags -->
   <meta property="og:url" content="https://rahultiwari.info">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Rahul Tiwari">
-  <meta property="og:description" content="Hello World I am Rahul Tiwari, I'm a Javascript Web developer, Bike rider, and a wayfarer.">
+  <meta property="og:description" content="I am Rahul Tiwari, I'm a Javascript Web developer, Bike rider, and a wayfarer, senior software engineer">
   <meta property="og:image" content="https://rahultiwari.info/img/rahulnew.webp">
 
   <!-- Twitter Meta Tags -->
-  <meta name="twitter:card" content="Hello World I am Rahul Tiwari, I'm a Javascript Web developer, Bike rider, and a wayfarer.">
+  <meta name="twitter:card" content="I am Rahul Tiwari, I'm a Javascript Web developer, Bike rider, and a wayfarer,senior software engineer ">
   <meta name="twitter:title" content="Rahul Tiwari">
-  <meta name="twitter:description" content="Hello World I am Rahul Tiwari, I'm a Javascript Web developer, Bike rider, and a wayfarer.">
+  <meta name="twitter:description" content="I am Rahul Tiwari, I'm a Javascript Web developer, Bike rider, and a wayfarer, senior software engineer">
   <meta name="twitter:image" content="https://rahultiwari.info/img/rahulnew.webp">
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -58,7 +59,6 @@
   <script src="js/vendor/modernizr.js"></script>
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/font.css" />
-  <!-- <link rel="stylesheet" href="css/animate.css" /> -->
   <link rel="stylesheet" href="css/icon.css" />
   <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
   <link rel="stylesheet" href="font/font-awesome/css/font-awesome.min.css">
@@ -96,6 +96,7 @@
       </div>
     </div>
   </header>
+
   <section class="intro" id="intro">
     <div class="row" id="middle_row">
       <div class="medium-12 columns alignCenter">
@@ -116,12 +117,20 @@
       </div>
     </div>
   </section>
+  <div class="color-change">
+    <div class="open-changer" >
+      <i class="fa fa-cog" ></i></div>
+      <a href="javascript:void(0)" class="swapColor orange" data-theme="orange" onclick="changetheme('#FFC107')"></a> 
+      <a href="javascript:void(0)" class="swapColor red" data-theme="red" onclick="changetheme('#f44336')"></a> 
+      <a href="javascript:void(0)" class="swapColor green" data-theme="green" onclick="changetheme('#4CAF50')"></a> 
+      <a href="javascript:void(0)" class="swapColor blue" data-theme="blue" onclick="changetheme('#64B5F6')"></a>
+  </div>
   <section class="about" id="me">
     <div class="row">
       <div class="large-12 medium-12 columns">
         <div class="large-4 medium-4 columns">
           <img alt="rahul tiwari" class="logo" src="img/rahulnew.webp">
-          <div class="medium-12 columns">
+          <div class="medium-12 columns" style="text-align: center;">
             <ul class="tools">
                <li><a href="https://www.facebook.com/Veerdev1993" aria-label="Facebook" target="_blank" rel="noreferrer"><i
                     class="fa fa-facebook-official"></i></a></li>
@@ -161,7 +170,7 @@
         <p>
           Download my Resume
         </p>
-        <img  class="resume" alt="resume" onclick="changeImage()" src="img/dwnld.webp">
+        <img  class="resume" alt="rahul twari resume" onclick="changeImage()" src="img/dwnld.webp">
       </div>
     </div>
   </section>
@@ -285,6 +294,7 @@
   <script src="js/stepsForm.js"></script>
   <script src="js/jquery.animateNumber.min.js"></script>
   <script src="js/jquery.cbpFWSlider.min.js"></script>
+
   <script>
     $(function () {
       $('#cbp-fwslider').cbpFWSlider();
@@ -301,6 +311,20 @@
   </script>
   <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
   <script type="text/javascript">
+
+  function changetheme(colorvalue){
+    $('#quotes').css('background', colorvalue);
+    $('.menu>li>a').css('color', colorvalue);
+  }
+
+    $('.color-change').on('click', function(event){
+      if($('.color-change').attr('class') == "color-change"){
+        $('.color-change').addClass('active-changer')
+      }else{
+        $('.color-change').removeClass('active-changer')
+      }
+    })
+
     $(function () {
       $('header a').bind('click', function (event) {
         var $anchor = $(this);

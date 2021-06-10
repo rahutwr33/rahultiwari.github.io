@@ -106,7 +106,7 @@ var skills = [
             },
             {"header" : "Mordern Web",
               "captions" : [
-                "React",
+                "React JS",
                 "Node JS",
                 "Express JS",
                 "AWS Services",
@@ -116,6 +116,8 @@ var skills = [
                 0.80,
                 0.85,
                 0.85,
+                0.90,
+                0.70,
               ]
             }
           ];
@@ -170,7 +172,6 @@ var skills = [
               xy = getXY(i+1, 0.3);
               ctx.lineTo(xy.x, xy.y);
               xy = getXY(i, 0.37);
-              console.log();
               ctx.fillText(skills[ pentagonIndex].captions[valueIndex],xy.x, xy.y +5);
               valueIndex++;
               ctx.closePath();
