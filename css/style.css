@@ -843,3 +843,34 @@ span.title {
   color:#41b0bf !important;
   font-size: 3em !important;
 }
+
+ul.tools {
+  text-align: center;
+}
+ul.tools li {
+  margin: 0px 2px;
+}
+ul.tools li i.fa {
+  font-size: 35px !important;
+}
+li.instagrm {
+  width: 38px;
+  height: 45px;
+  padding-top: 17px;
+}
+img.instagrmimg {
+  width: 35px;
+  height: 35px;
+}
+
+@media only screen and (max-width: 600px) {
+  h1.cd-headline.clip.is-full-width {
+    padding-top: 10px;
+  }
+  .large-4.small-12.medium-4.columns {
+    width: 100%;
+  }
+  [class*="column"] + [class*="column"]:last-child {
+    float: left;
+  }
+}
