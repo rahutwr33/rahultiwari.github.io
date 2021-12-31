@@ -73,6 +73,8 @@
     <link rel="stylesheet" type="text/css" href="css/travel.css" />
     <script src="js/modernizr.custom.js"></script>
     <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
     <script>
         function onScroll() {
             if ($(this).scrollTop() == 0) {
@@ -96,6 +98,7 @@
             <div class="row">
                 <div class="small-12 large-12 columns alignCenter">
                     <ul class="menu">
+                        <li><a href="/">Home</a></li>
                         <li><a href="#me">about</a></li>
                         <li><a href="#myskills">skills</a></li>
                         <li><a href="#coffeewithme">coffee with me</a></li>
@@ -334,7 +337,11 @@
             ];
             let HTML = "";
             for (let i = 0; i < imgpath.length; i++) {
-                HTML += `<figure><img src=${imgpath[i]} alt="" /><figcaption>Daytona Beach <small>United States</small></figcaption></figure>`
+                HTML += `<figure>
+                    <a rel="gallery" class="fancybox" href=${imgpath[i]}>
+                       <img imgfancy" src=${imgpath[i]} alt="" />
+                    </a>
+                </figure>`
             }
             if(HTML && HTML.length){
                 document.getElementById("gallerysqr").innerHTML = HTML;
@@ -342,11 +349,28 @@
         }
 
         popup.init().then(()=>{
-            loadGallary();
+            $(document).ready(function(){
+            $(".fancybox").fancybox({
+                    openEffect: "none",
+                    closeEffect: "none",
+                    fitToView: false,
+                    maxWidth: 400,
+                    autoSize : true,
+                    afterClose: function(instance) {
+                        console.log(instance);
+                        $(this).css({'display': 'block'})
+                    }
+                });
+                
+                $(".zoom").hover(function(){
+                    $(this).addClass('transition');
+                }, function(){
+                    
+                    $(this).removeClass('transition');
+                });
+                loadGallary();
+            });
         })
-
-        
-
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-P03MG8GC6V"></script>

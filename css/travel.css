@@ -44,6 +44,11 @@ img {
   display: none;
 }
 
+img.fancybox.imgfancy {
+  max-width: 400px;
+  max-height: 300px;
+}
+
 .popup {
   position: fixed;
   z-index: 2;
@@ -422,3 +427,30 @@ img {
             transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -300, -225, 0, 1);
   }
 }
+@media only screen and (max-device-width: 568px) {
+  .gallery figure{
+    flex-basis: 100% !important;
+  }
+}
+@media only screen and (min-device-width: 569px) and (max-device-width: 769px){
+  .gallery figure{
+    flex-basis: 35% !important;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .gallery figure{
+    flex-basis: 38.99%;
+  }
+}
+@media only screen and (min-device-width: 1024px) {
+  .gallery figure{
+    flex-basis: 17%;
+  }
+}
+img.zoom {
+  width: 100%;
+  height: 200px;
+  border-radius:5px;
+  object-fit:cover;
+}
+
