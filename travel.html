@@ -6,7 +6,7 @@
     <meta name="google-site-verification" content="5c5Etrv-oEx7CnDo2pVIajenhWawo2j3xivScKlrKVI" />
     <meta name="description" content="I am Rahul Tiwari, I'm a Javascript Web developer, Bike rider, and a wayfarer.">
     <meta name="keywords"
-        content="Rahul,Rahul Tiwari,rahul tiwari uttrakhand,rahul tiwari iqvia,rahul tiwari nainital,rahul tiwari gallary,rahul tiwari javascipt developer,rahul tiwari Bikerider,IQVIA, rahul tiwari traveler,rahul tiwari software developer,rahul tiwari chandigarh, rahul tiwari india, rahul tiwari wayfarer,rahult,rahul tiwari kumauni">
+        content="Rahul Tiwari,rahul tiwari iqvia, Himalaya Travel,rahul tiwari Himalaya Travel youtube channel rahul tiwari nainital,rahul tiwari gallary,rahul tiwari javascipt developer,rahul tiwari Bikerider,IQVIA, rahul tiwari traveler,rahul tiwari software developer,rahul tiwari chandigarh, rahul tiwari india, rahul tiwari wayfarer,rahult,rahul tiwari kumauni">
     <meta name="author" content="Rahul Tiwari">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta property="og:title" content="Rahul Tiwari" />
@@ -127,7 +127,55 @@
             </div>
         </div>
     </section>
-
+    <section class="projects" id="projects">
+        <div class="row alignCenter">
+          <h1>My Youtube Videos</h1>
+          <div id="cbp-fwslider" class="cbp-fwslider">
+            <ul>
+              <li>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/1PYRTV0dJtc" title="YouTube video player" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe>
+                <h2 class="name">Himalaya Travel</h2>
+                <p class="desc">
+                    HI guys welcome to my channel "Himalaya Travel".
+                </p>
+                <a class="btn project" href="https://www.youtube.com/channel/UCZuXbCNKLCHLmeDwoKNpZdQ">Watch Video</a>
+              </li>
+              <li>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/NTEDe_1an0s" title="YouTube video player" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+               </iframe>
+               <h2 class="name">Himalaya Travel</h2>
+               <p class="desc">
+                   HI guys welcome to my channel "Himalaya Travel".
+               </p>
+                <a class="btn project" href="https://youtube.com/channel/UCZuXbCNKLCHLmeDwoKNpZdQ">Watch Video</a>
+              </li>
+              <li>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ZJc_jxj6wxo" title="YouTube video player" frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <h2 class="name">Himalaya Travel</h2>
+                  <p class="desc">
+                      HI guys welcome to my channel "Himalaya Travel".
+                  </p>
+                <a class="btn project" href="https://youtube.com/channel/UCZuXbCNKLCHLmeDwoKNpZdQ">Watch Video</a>
+              </li>
+              <li>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h2 class="name">There are many more !</h2>
+                <p class="desc">
+                  Check out all the videos on my Youtube Channel
+                </p>
+                <a class="btn project" href="https://youtube.com/channel/UCZuXbCNKLCHLmeDwoKNpZdQ" target="_blank">Visit now</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     <section >
         <div class="container">
             <div class="rows">
@@ -145,7 +193,7 @@
             </div>
         </div>
     </section>
-
+    
     <hr class="num">
     <section class="coffeewithme" id="coffeewithme">
         <div class="row alignCenter">
@@ -340,12 +388,14 @@
             for (let i = 0; i < imgpath.length; i++) {
                 HTML += `<figure>
                     <a rel="gallery" class="fancybox" href=${imgpath[i]}>
-                       <img imgfancy" src=${imgpath[i]} alt="" />
+                       <img imgfancy" src=${imgpath[i]} alt="rahul tiwari" />
                     </a>
                 </figure>`
             }
             if(HTML && HTML.length){
-                document.getElementById("gallerysqr").innerHTML = HTML;
+                setTimeout(() => {
+                    document.getElementById("gallerysqr").innerHTML = HTML;
+                }, 2000);
             }
         }
 
