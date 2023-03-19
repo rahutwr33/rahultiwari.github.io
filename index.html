@@ -168,29 +168,34 @@
         <div class="large-8 medium-8 columns">
           <h2 class="cmnstl">About me.</h2>
           <p>
-            Hi I am <a href="https://www.facebook.com/Veerdev1993" target="_blank" rel="noreferrer">Rahul Tiwari</a>, a
-            30 year old Javascript Software
-            developer, Rider, and a wayfarer living in <a href="https://goo.gl/maps/bxs2Zpxytp8seEM8A" target="_blank"
-              rel="noreferrer">Bengaluru, Karnataka, India</a>.Basically I am from <a href="https://goo.gl/maps/hUuRGepAzpd1jD4G6" target="_blank"
-              rel="noreferrer">Uttrakhand</a>, <a href="https://goo.gl/maps/H2eGU6CPvq7KrKrJA" target="_blank"
-              rel="noreferrer">Nainital</a>, India.I am a
+            Hi I am <a class="my-link" href="https://www.facebook.com/Veerdev1993" target="_blank"
+              rel="noreferrer">Rahul
+              Tiwari</a><span> ,a 30 year old Javascript Software developer, Rider, and a wayfarer living in</span> <a
+              class="my-link" href="https://goo.gl/maps/bxs2Zpxytp8seEM8A" target="_blank" rel="noreferrer">Bengaluru,
+              Karnataka,
+              India</a>.Basically I am from <a class="my-link" href="https://goo.gl/maps/hUuRGepAzpd1jD4G6"
+              target="_blank" rel="noreferrer">Uttrakhand</a>,<a class="my-link"
+              href="https://goo.gl/maps/H2eGU6CPvq7KrKrJA" target="_blank" rel="noreferrer">Nainital</a>, India.I am a
             Computer Science Student and Engineer, currently working with awesome
-            folks at <a href="https://www.iqvia.com/" rel="noreferrer" target="_blank">IQVIA</a>.
+            folks at <a class="my-link" href="https://www.iqvia.com/" rel="noreferrer" target="_blank">IQVIA</a>.
           </p>
           <p>
-            Rahul Tiwari is a highly skilled and experienced Senior Engineer with a Masters in Computer Applications (MCA) from a Birla Institute.
-            He has over 6 years of work experience in the field of engineering, during which time he has demonstrated a strong ability to design and develop complex systems and software solutions.
-            With his technical expertise and attention to detail, 
+            Rahul Tiwari is a highly skilled and experienced Senior Engineer with a Masters in Computer Applications
+            (MCA) from a Birla Institute.
+            He has over 6 years of work experience in the field of engineering, during which time he has demonstrated a
+            strong ability to design and develop complex systems and software solutions.
+            With his technical expertise and attention to detail,
             Rahul has been able to deliver high-quality projects that meet the needs of his clients.
           </p>
           <p>
-            Have a look at my <a href="https://www.facebook.com/Veerdev1993" target="_blank" rel="noreferrer">Facebook
-              Profile</a>, <a href="#myskills">skills</a> or just connect with me on <a
+            Have a look at my <a class="my-link" href="https://www.facebook.com/Veerdev1993" target="_blank"
+              rel="noreferrer">Facebook
+              Profile</a>, <a class="my-link" href="#myskills">skills</a> or just connect with me on <a class="my-link"
               href="https://www.linkedin.com/in/rahul-tiwari-7a8802a8/" target="_blank"
-              rel="noreferrer">LinkedIn</a>.also you can connect with me on <a
+              rel="noreferrer">LinkedIn</a>.also you can connect with me on <a class="my-link"
               href="https://www.instagram.com/veerdev1993/" target="_blank" rel="noreferrer">Instagram</a> I am always
             excited to do business with like minded people, lets discuss
-            over <a href="#coffeewithme">coffee</a>.
+            over <a class="my-link" href="#coffeewithme">coffee</a>.
           </p>
         </div>
       </div>
@@ -222,20 +227,27 @@
     <div class="card60">
       <h3 style="font-size: 20px;color: white;font-family: fantasy;">Weather Update</h3>
       <div class="main-weature">
-      <div class="comspace"><div class="feelike">Feels Like -</div> <div id="feelslike" class="comspacegap"></div></div>
-      <div class="comspace">Humidity - <div id="humidity" class="comspacegap"> </div></div>
-      <div class="comspace">Temperature - <div id="temp" class="comspacegap"></div></div>
-      <div class="comspace">Wind - <div id="wind" class="comspacegap"></div></div>
-      <div class="comspace">Max Temperature - <div id="temp_max" class="comspacegap"></div></div>
-      <div class="comspace">Minimum Temperature - <div id="temp_min" class="comspacegap"></div></div>
+        <div class="comspace">
+          <div class="feelike">Feels Like -</div>
+          <div id="feelslike" class="comspacegap"></div>
+        </div>
+        <div class="comspace">Humidity - <div id="humidity" class="comspacegap"> </div>
+        </div>
+        <div class="comspace">Temperature - <div id="temp" class="comspacegap"></div>
+        </div>
+        <div class="comspace">Wind - <div id="wind" class="comspacegap"></div>
+        </div>
+        <div class="comspace">Max Temperature - <div id="temp_max" class="comspacegap"></div>
+        </div>
+        <div class="comspace">Minimum Temperature - <div id="temp_min" class="comspacegap"></div>
+        </div>
       </div>
     </div>
     <div class="card">
       <h3 style="font-size: 20px;color: white;font-family: fantasy;">Himalyan Travel</h3>
-      <iframe  src="https://www.youtube.com/embed/1PYRTV0dJtc"
-      title="YouTube video player" frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/1PYRTV0dJtc" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
     </div>
   </section>
   <section class="quotes" id="quotes">
@@ -392,14 +404,14 @@
         fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${crd.latitude}&lon=${crd.longitude}&appid=3ad1214583c4bac481bddb9ca67ec911&units=metric`)
           .then((response) => response.json())
           .then((data) => {
-            document.getElementById('feelslike').innerText = ' '+ parseInt(data.main.feels_like)+ '°C'
-            document.getElementById('humidity').innerText = ' '+ parseInt(data.main.humidity)+ '%'
-            document.getElementById('wind').innerText = ' '+ parseInt(data.wind.speed)+ 'km/h'
-            document.getElementById('temp').innerText = ' '+ parseInt(data.main.temp)+ '°C'
-            document.getElementById('temp_max').innerText = ' '+ parseInt(data.main.temp_max)+ '°C'
-            document.getElementById('temp_min').innerText = ' '+ parseInt(data.main.temp_min)+ '°C'
+            document.getElementById('feelslike').innerText = ' ' + parseInt(data.main.feels_like) + '°C'
+            document.getElementById('humidity').innerText = ' ' + parseInt(data.main.humidity) + '%'
+            document.getElementById('wind').innerText = ' ' + parseInt(data.wind.speed) + 'km/h'
+            document.getElementById('temp').innerText = ' ' + parseInt(data.main.temp) + '°C'
+            document.getElementById('temp_max').innerText = ' ' + parseInt(data.main.temp_max) + '°C'
+            document.getElementById('temp_min').innerText = ' ' + parseInt(data.main.temp_min) + '°C'
           })
-          .catch(err=> {
+          .catch(err => {
             console.log('err', err)
           })
       }

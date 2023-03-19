@@ -3,12 +3,18 @@ body {
   color: #3a3a3a;
 }
 
-a {
+.my-link {
   color: white;
+  border-bottom-color: red !important
 }
+
 
 a:hover {
   color: #2ecff9;
+}
+
+iframe{
+  width: -webkit-fill-available;
 }
 
 img {
