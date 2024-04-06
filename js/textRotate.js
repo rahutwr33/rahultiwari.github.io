@@ -76,17 +76,17 @@ var skills = [
     "header": "INTERESTS",
     "captions": [
       "Web",
-      "Design",
-      "SEO",
-      "Next JS",
-      "React"
+      "Python",
+      "Node JS",
+      "React",
+      "Cloud Services"
     ],
     "values": [
       0.80,
       0.90,
       0.90,
       0.80,
-      0.80,
+      0.90,
     ]
   },
   {
@@ -112,15 +112,15 @@ var skills = [
       "React JS",
       "Node JS",
       "Express JS",
-      "AWS Services",
-      "React Native"
+      "Python",
+      "AWS Services"
     ],
     "values": [
       0.80,
       0.85,
       0.85,
+      0.85,
       0.90,
-      0.70,
     ]
   }
 ];
@@ -129,7 +129,7 @@ var pentagonIndex = 0;
 var valueIndex = 0;
 var width = 0;
 var height = 0;
-var radOffset = Math.PI / 2
+var radOffset = Math.PI / 1.5
 var sides = 5; // Number of sides in the polygon
 var theta = 2 * Math.PI / sides; // radians per section
 
