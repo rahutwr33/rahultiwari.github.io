@@ -6,7 +6,7 @@
   <meta name="google-site-verification" content="5c5Etrv-oEx7CnDo2pVIajenhWawo2j3xivScKlrKVI" />
   <meta name="description" content="I am Rahul Tiwari, I'm a Javascript Web developer, Bike rider, and a wayfarer.">
   <meta name="keywords"
-    content="Rahul,Rahul Tiwari,rahul tiwari uttrakhand,rahul tiwari iqvia,rahul tiwari nainital,rahul tiwari gallary,rahul tiwari javascipt developer,rahul tiwari Bikerider,IQVIA, rahul tiwari traveler,rahul tiwari software developer,rahul tiwari chandigarh, rahul tiwari india, rahul tiwari wayfarer,rahult,rahul tiwari kumauni">
+    content="Rahul,Rahul Tiwari,rahul tiwari uttrakhand,rahul tiwari iqvia,rahul tiwari uttrakhand,rahul tiwari nainital,rahul tiwari gallary,rahul tiwari javascipt developer,rahul tiwari Bikerider,IQVIA, rahul tiwari traveler,rahul tiwari software developer,rahul tiwari chandigarh, rahul tiwari india, rahul tiwari wayfarer,rahult,rahul tiwari kumauni">
   <meta name="author" content="Rahul Tiwari">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta property="og:title" content="Rahul Tiwari" />
@@ -69,7 +69,12 @@
     }
  </script>
 
-  <link href="img/favicon.ico" type="image/x-icon" rel="shortcut icon" />
+  <link href="img/favicon.ico" rel="shortcut icon" />
+  <link href="img/favicon.ico" sizes="16x16 32x32" rel="icon" />
+  <link href="img/favicon-16x16.png" type="image/png" sizes="16x16" rel="icon" />
+  <link href="img/favicon-32x32.png" type="image/png" sizes="32x32" rel="icon" />
+  <link href="img/apple-touch-icon.png" type="image/png" rel="apple-touch-icon" />
+
   <link rel="stylesheet" href="css/foundation.css" />
   <script src="js/vendor/modernizr.js"></script>
   <link rel="stylesheet" href="css/style.css" />
@@ -205,7 +210,59 @@
     </div>
   </section>
   <hr class="num">
+  <section class="myskills" id="myskills">
+    <div class="row alignCenter">
+      <h2 class="cmnstl">Milestones.</h2>
+    </div>
+    <div class="certification">
+      <div>
+        <figure>
+          <a target="_blank" href="https://drive.google.com/file/d/1Szg2CPATWK-LByk-yYImCF3XN3xL1Ndo/view?usp=sharing">
+            <img class="img-cert" src="./img/aws-pract.png" alt="AWS Certified Cloud Practitioner">
+          </a>
+        </figure>
+      </div>
+      <div>
 
+        <figure>
+          <a target="_blank" href="https://drive.google.com/file/d/1sRopSR9gsiZS2v8IUbG0-XZwkQSQLAmR/view?usp=sharing">
+            <img class="img-cert" src="./img/dev-assoc.png" alt="AWS Certified Developer - Associate">
+          </a>
+        </figure>
+      </div>
+      <div>
+        <figure>
+          <a target="_blank" href="https://leetcode.com/u/rahultwr33/"><img class="img-cert" src="img/leetcode.png"
+              alt="Rahul Tiwari Leetcode"></a>
+        </figure>
+      </div>
+      <div>
+        <figure>
+          <a target="_blank" href="https://www.hackerrank.com/certificates/65abc67da78b"><img class="img-cert"
+              src="./img/cert.png" alt="Hackerank javascript intermediate"></a>
+        </figure>
+      </div>
+    </div>
+  </section>
+  <hr class="num">
+  <section class="myskills" id="myskills">
+    <div class="row alignCenter">
+      <h2 class="cmnstl">From the Last 7 month Currenlty Learning.</h2>
+    </div>
+    <div class="certification">
+      <div>
+        <figure>
+          <img class="img-cert" src="./img/ds.jpg" alt="Data structure & Algorihm">
+        </figure>
+      </div>
+      <div>
+        <figure>
+          <img class="img-cert" src="./img/kafka.png" alt="Apache Kafka">
+        </figure>
+      </div>
+    </div>
+  </section>
+  <hr class="num">
   <section class="myskills" id="myskills">
     <div class="row alignCenter">
       <h2 class="cmnstl">Skills.</h2>
@@ -221,6 +278,8 @@
       </div>
     </div>
   </section>
+
+
   <hr class="num">
   <section class="utilities" id="utilities">
     <div class="card">
@@ -486,7 +545,7 @@
       $('header a').bind('click', function (event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
-          scrollTop: $($anchor.attr('href')).offset().top
+          scrollTop: $($anchor?.attr('href'))?.offset()?.top
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
       });

@@ -35,6 +35,17 @@ button.agebtn {
   padding: 20px;
   margin-left: 10px;
 }
+.certification{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-cert {
+  max-width: 200px;
+  max-height: 200px;
+}
 
 .comspacegap {
   /* padding-top: 35px; */
