@@ -122,7 +122,25 @@ var skills = [
       0.85,
       0.90,
     ]
-  }
+  },
+  {
+    "header": "Hobbies",
+    "captions": [
+      "Bike Riding",
+      "",
+      "Trekking",
+      "",
+      "Solo Travel",
+    ],
+    "values": [
+      0.80,
+      0,
+      0.90,
+      0,
+      0.90,
+
+    ]
+  },
 ];
 
 var pentagonIndex = 0;

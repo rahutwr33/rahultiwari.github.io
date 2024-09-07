@@ -5,15 +5,14 @@ body {
 
 .my-link {
   color: white;
-  border-bottom-color: red !important
+  border-bottom-color: red !important;
 }
-
 
 a:hover {
   color: #2ecff9;
 }
 
-iframe{
+iframe {
   width: -webkit-fill-available;
 }
 
@@ -34,12 +33,6 @@ button.agebtn {
   width: 33%;
   padding: 20px;
   margin-left: 10px;
-}
-.certification{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
 }
 
 .img-cert {
@@ -1013,10 +1006,30 @@ ul.splide__pagination {
 .cd-headline.clip b.is-visible {
   opacity: 1;
 }
+@media only screen and (max-width: 768px) {
+  .skills {
+    margin: 0;
+    text-align: center;
+    display: block !important;
+  }
+  .certification {
+    display: block !important;
+    margin: 0;
+    text-align: center;
+  }
+}
+.certification {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
 
 .skills {
-  margin: auto;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .pentagon {
@@ -1178,5 +1191,4 @@ a[d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2
     margin-left: 0px;
     margin-bottom: 5px;
   }
-
 }
